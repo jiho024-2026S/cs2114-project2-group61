@@ -1,32 +1,18 @@
-
+/** Finds songs with an artist or genre the listener likes. */
 public class RecommendationEngine {
-    public SuggestionQueue generateSuggestions(LinkedChain<Song> library, ListenerProfile listener)
-    {
-        if (library == null || listener == null) {
-            throw new IllegalArgumentException(
-                "Library and listener cannot be null");
+    public SuggestionQueue generateSuggestions(LinkedChain<Song> library,
+        ListenerProfile profile) {
+        if (library == null || profile == null) {
+            throw new IllegalArgumentException("Library and profile are required.");
         }
-
-        SuggestionQueue suggestions = new SuggestionQueue();
-
-        // Convert the linked chain into an array for iteration.
-        Song[] allSongs = library.toArray(
-            new Song[library.size()]);
-
-        for (int i = 0; i < allSongs.length; i++) {
-            Song song = allSongs[i];
-
-            boolean artistMatch =
-                listener.likesArtist(song.getArtist());
-
-            boolean genreMatch =
-                listener.likesGenre(song.getGenre());
-
-            if (artistMatch || genreMatch) {
-                suggestions.enqueue(song);
+        SuggestionQueue queue = new SuggestionQueue();
+        Song[] songs = library.toArray(new Song[library.size()]);
+        for (Song song : songs) {
+            if (profile.likesArtist(song.getArtist())
+                || profile.likesGenre(song.getGenre())) {
+                queue.addSuggestion(song);
             }
         }
-
-        return suggestions;
+        return queue;
     }
 }

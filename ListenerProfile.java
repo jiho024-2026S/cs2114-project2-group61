@@ -1,31 +1,27 @@
-
+/** A listener's favorite artists and genres. */
 public class ListenerProfile {
-    private LinkedChain<String> favoriteArtists;
-    private LinkedChain<String> favoriteGenres;
+    private LinkedChain<String> artists = new LinkedChain<String>();
+    private LinkedChain<String> genres = new LinkedChain<String>();
 
-    public ListenerProfile() {
-        favoriteArtists = new LinkedChain<String>();
-        favoriteGenres = new LinkedChain<String>();
-    }
-
-    public void addFavoriteArtist(String artist)
-    {
-        if (artist != null && !favoriteArtists.contains(artist)) {
-            favoriteArtists.addToEnd(artist);
+    public void addFavoriteArtist(String artist) {
+        if (artist == null || artist.trim().isEmpty()) {
+            throw new IllegalArgumentException("Artist cannot be blank.");
         }
+        artists.add(artist.trim());
     }
 
     public void addFavoriteGenre(String genre) {
-        if (genre != null && !favoriteGenres.contains(genre)) {
-            favoriteGenres.addToEnd(genre);
+        if (genre == null || genre.trim().isEmpty()) {
+            throw new IllegalArgumentException("Genre cannot be blank.");
         }
+        genres.add(genre.trim());
     }
 
     public boolean likesArtist(String artist) {
-        return favoriteArtists.contains(artist);
+        return artists.contains(artist);
     }
 
     public boolean likesGenre(String genre) {
-        return favoriteGenres.contains(genre);
+        return genres.contains(genre);
     }
 }
