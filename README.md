@@ -37,7 +37,7 @@ The core MVP features are implemented. The remaining work we might be focusing i
 1. **Validate input handling:** Confirm that invalid menu inputs and invalid song or preference values are handled correctly.
 2. **Review requirements:** Compare the final implementation and test results against the project rubric to identify any missing requirements.
 
-## 2. *Which stretch goals will you attempt? The ones from your scope you are committing to, and the ones you are dropping.
+## 2. Which stretch goals will you attempt? The ones from your scope you are committing to, and the ones you are dropping.
 
 ### (1) What we attempted?
 | Our Stretch Goals | How is it attempted |
@@ -49,8 +49,8 @@ The core MVP features are implemented. The remaining work we might be focusing i
 |---|---|
 | A simple graphical user interface (GUI) that allows users to interact with the song collection, listener profiles, and recommendation features. | We might create HTML file and docker to create real-time working website. |
 
-## 3. * What new tests will you need? The methods and bad-input cases the added work must cover.
-
+## 3. What new tests will you need? The methods and bad-input cases the added work must cover.
+The most important new bad-input tests are blank or null song fields, blank favorite artists or genres, negative or nonnumeric years, invalid menu choices, null chain entries, invalid chain indexes, and null arguments passed to the recommendation engine.
 
 ## Attribution
 | File | Contributor(s) | Contribution |
