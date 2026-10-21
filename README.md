@@ -48,7 +48,7 @@ The core MVP features are implemented. The remaining work we might be focusing i
 |---|---|
 | A simple graphical user interface (GUI) that allows users to interact with the song collection, listener profiles, and recommendation features. | We might create HTML file and docker to create real-time working website. |
 
-## 3. What new tests will you need? The methods and bad-input cases the added work must cover.
+## (3) What new tests will you need? The methods and bad-input cases the added work must cover.
 The most important new bad-input tests are blank or null song fields, blank favorite artists or genres, negative or nonnumeric years, invalid menu choices, null chain entries, invalid chain indexes, and null arguments passed to the recommendation engine.
 
 ## Attribution
@@ -74,6 +74,12 @@ The most important new bad-input tests are blank or null song fields, blank favo
 ChatGPT assisted in formatting this table, conceptualizing Big-O time complexity analysis, and reviewing the project against the rubric.
 
 [View Attribution Table (Excel)](Attribution.xlsx)
+
+## System Diagram
+[Song Suggestion Queue System Diagram](SystemDiagram.png)
+
+## Compile, Run, & Test Instructions
+[Instructions](Instructions.rtf)
 
 ## Time Complexity Analysis
 
