@@ -52,17 +52,28 @@ The core MVP features are implemented. The remaining work we might be focusing i
 The most important new bad-input tests are blank or null song fields, blank favorite artists or genres, negative or nonnumeric years, invalid menu choices, null chain entries, invalid chain indexes, and null arguments passed to the recommendation engine.
 
 ## Attribution
-[View Attribution Table (Excel)](Attribution.xlsx)
+| File | Contributor(s) | Contribution |
+|---|---|---|
+| `Main.java` | Jiho Lyu, Sravan Surapaneni | Initialized and connected application components. |
+| `MainTest.java` | Sravan Surapaneni | Tested startup, menu input, and exit. |
+| `Menu.java` | Jiho Lyu, Sravan Surapaneni | Implemented menu operations and input validation. |
+| `MenuTest.java` | Sravan Surapaneni | Tested menu operations and invalid inputs. |
+| `Song.java` | Jiho Lyu, Sravan Surapaneni | Implemented song fields, getters, and formatted output. |
+| `SongTest.java` | Sravan Surapaneni | Tested song data and invalid values. |
+| `ListenerProfile.java` | Jiho Lyu, Sravan Surapaneni | Implemented favorite artists and genres. |
+| `ListenerProfileTest.java` | Sravan Surapaneni | Tested listener preferences and invalid values. |
+| `RecommendationEngine.java` | Jiho Lyu, Sravan Surapaneni | Implemented artist and genre recommendation matching. |
+| `RecommendationEngineTest.java` | Sravan Surapaneni | Tested matching, empty libraries, and no matches. |
+| `SuggestionQueue.java` | Jiho Lyu, Sravan Surapaneni | Implemented storage and retrieval of suggestions. |
+| `SuggestionQueueTest.java` | Sravan Surapaneni | Tested suggestion queue and empty state. |
+| `LinkedChain.java` | Course instructor | Instructor-provided implementation, used unchanged. |
+| `LinkedChainTest.java` | Sravan Surapaneni | Tested linked-chain operations and generic reuse. |
 
 ## Generative AI Usage
 
 ChatGPT assisted in formatting this table, conceptualizing Big-O time complexity analysis, and reviewing the project against the rubric.
 
-## System Diagram
-[Song Suggestion Queue System Diagram](SystemDiagram.png)
-
-## Compile, Run, & Test Instructions
-[Instructions](Instructions.rtf)
+[View Attribution Table (Excel)](Attribution.xlsx)
 
 ## System Diagram
 [Song Suggestion Queue System Diagram](SystemDiagram.png)
