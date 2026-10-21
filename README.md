@@ -76,10 +76,10 @@ ChatGPT assisted in formatting this table, conceptualizing Big-O time complexity
 [View Attribution Table (Excel)](Attribution.xlsx)
 
 ## System Diagram
-[Song Suggestion Queue System Diagram](SystemDiagram.png)
+[Song Suggestion Queue System Diagram](SongSystemDiagram.png)
 
 ## Compile, Run, & Test Instructions
-[Instructions](Instructions.rtf)
+[Instructions](SongInstructions.rtf)
 
 ## Time Complexity Analysis
 
