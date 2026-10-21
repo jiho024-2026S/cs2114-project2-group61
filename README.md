@@ -1,4 +1,3 @@
-
 # Group 61 Reflection
 ## Next Step
 ## 1. What Is Left to Finish the MVP?
